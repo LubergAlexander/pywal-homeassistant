@@ -17,7 +17,9 @@ def hex_to_rgb(value):
 
 def call_service(domain, service, data):
     return requests.post(
-        "{base_url}/api/services/{domain}/{service}".format(base_url=base_url),
+        "{base_url}/api/services/{domain}/{service}".format(
+            base_url=BASE_URL, service=service, domain=domain
+        ),
         json=data,
         headers={"X-HA-Access": PASSWORD},
     )
