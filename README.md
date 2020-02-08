@@ -5,7 +5,7 @@ Sets lighting colors based on wallpaper color palette
 
 ## Usage
 
-Set homeassistant `BASE_URL` and `PASSWORD` in `pywal-homeassistant.py`
+Set homeassistant `BASE_URL` and `TOKEN` in `pywal-homeassistant.py`
 
 Map colors to various light enitites in HA
 
